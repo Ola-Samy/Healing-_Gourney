@@ -1,0 +1,554 @@
+/********** Template CSS **********/
+:root {
+    --primary: #06A3DA;
+    --secondary: #F57E57;
+    --light: #EEF9FF;
+    --dark: #091E3E;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.btn {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    border-radius: 0%;
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    border-radius: 0%
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.top-shape::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 100%;
+    top: 0;
+    left: -17px;
+    background: var(--primary);
+    transform: skew(40deg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    padding: 35px 15px;
+    font-size: 18px;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link,
+    .sticky-top.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(9, 30, 62, .45);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (min-width: 991.98px) {
+    .banner {
+        position: relative;
+        margin-top: -90px;
+        z-index: 1;
+    }
+}
+
+.section-title h5::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    right: -55px;
+    bottom: 11px;
+    background: var(--primary);
+}
+
+.section-title h5::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 3px;
+    right: -75px;
+    bottom: 11px;
+    background: var(--secondary);
+}
+
+.twentytwenty-wrapper {
+    height: 100%;
+}
+
+.hero-header {
+    background: linear-gradient(rgba(9, 30, 62, .55), rgba(9, 30, 62, .55)), url(../img/addiction-2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.bg-appointment {
+    background: linear-gradient(rgba(9, 30, 62, .35), rgba(9, 30, 62, .35)), url(../img/doctor-2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.appointment-form {
+    background: rgba(6, 163, 218, .3);
+}
+
+.bg-contact  {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .45)), url(../img/contact.jpg);
+}
+
+.service-item img,
+.service-item .bg-light,
+.service-item .bg-light h5,
+.team-item .team-text {
+    transition: .5s;
+}
+
+.service-item:hover img {
+    transform: scale(1.15);
+}
+
+.team-item .team-text::after,
+.service-item .bg-light::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    border-radius:100px / 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .7);
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+}
+
+.team-item:hover .team-text::after,
+.service-item:hover .bg-light::after {
+    opacity: 1;
+}
+
+.bg-offer {
+    background:url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.offer-text {
+    background: rgba(6, 163, 218, .85);
+}
+.bg-price{
+    background: linear-gradient(rgba(9, 30, 62, .35), rgba(9, 30, 62, .35)), url(../img/price.jpg) center center no-repeat;
+        background-size:cover;
+}
+
+.price.carousel-item{
+    width: 720px;
+    height: 620px; 
+}
+.price.carousel-item img{
+    height: 400px;
+}
+
+.bg-testimonial {
+    background: linear-gradient(rgba(9,30,62,.35),rgba(9,30,62,.35)), url(../img/doctor-5.jpg) center center no-repeat;
+    background-size: cover;
+}
+.testimonial-carousel-item img {
+   width: 180px;
+   height: 160px;
+   
+}
+.testimonial-carousel-caption{
+background-color: rgba(6, 163, 218, .25);
+}
+.bg-team{
+    background:linear-gradient(rgba(9, 30, 62, .55), rgba(9, 30, 62, .55)),  url(../img/Doctors.jpg) center center no-repeat;
+    background-size: cover;
+}
+.image-row{
+    display:flex;
+   justify-content:space-around;
+   margin-top: 100px;
+}
+
+.flex{
+    border:1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .7);
+   
+}
+.relapse-icon-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .relapse-text,.success-text {
+    font-size: 16px; /* حجم الخط */
+    color: rgb(255, 255, 255); /* لون النص */
+    margin-top: 10px; /* مسافة بين الأيقونة والنص */
+    font-weight: bold; /* جعل الخط عريض */
+}
+#dailyMessage {
+    background: linear-gradient(135deg, #f7f7f7 0%, #e0e0e0 100%);
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* تأثير ظل الصندوق */
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto; /* لتمركز الرسالة في منتصف الصفحة */
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out; /* تأثير الحركة عند الظهور */
+}
+
+#dailyMessage:hover {
+    transform: scale(1.05); /* تأثير عند تمرير الفأرة */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#dailyMessage::before {
+    content: "💬"; /* إضافة أيقونة رسالة */
+    font-size: 30px;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    transform: rotate(10deg);
+    
+}
+
+  #relapseCountTop {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+  .success-icon-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #successCountTop {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+
+.text{
+    color: #bdd4d4f7;
+    margin-top: 80px;
+}
+/* تنسيق عام للجزء اللي بيشمل الأيقونة والتقويم */
+.start-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  
+  /* تنسيق أيقونة التقويم */
+  .start-date img {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  /* تنسيق مربع التقويم */
+  .start-date input[type="date"] {
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #03cded;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .start-date input[type="date"]:hover {
+    border-color: #f9f9f9; /* تغيير لون الحدود عند الـ hover */
+  }
+  .start-date img:hover,.relapse-icon-top:hover,.success-icon-top:hover {
+    transform: scale(1.1); /* تكبير الأيقونة بشكل بسيط */
+    transition: transform 0.3s ease;
+  }
+  
+ 
+
+
+.btn-primary1:hover{
+    background: #2da6ce;
+    transition-duration: 0.4s;
+}
+
+#dailyNotes{
+
+    border: 1px solid rgb(246, 241, 241);
+    border-radius: 10px;
+    margin-top: 80px;
+    width:40%;
+    height: 50px;
+    background: linear-gradient(#06A3DA, #1f7fdf);
+    margin-left: 100px;
+}
+
+#dailyGoals{
+    border: 1px solid rgb(246, 241, 241);
+    border-radius: 10px;
+    margin-top: 80px;
+    width:40%;
+    background: linear-gradient(#1fdad6, #299ac3);
+    margin-left: 100px;
+    margin-right: 80px;
+}
+
+#dailyGoals:hover, #dailyNotes:hover {
+    background: linear-gradient(#06A3DA, #1fbcdf); /* تغيير لون الخلفية عند hover */
+    transform: scale(1.05); /* زيادة حجم العنصر قليلاً عند hover */
+    color: #fff; /* يمكنك تغيير لون النص إذا أردت */
+  }
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* توزيع الأزرار بالتساوي */
+    margin-bottom: 20px; /* مساحة بين الأزرار والبوكسات */
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1; /* يجعل كل زرار له نفس العرض */
+    margin-right: 10px; /* مساحة بين الأزرار */
+  }
+  
+  
+  .button:last-child {
+    margin-right: 0; /* إزالة المساحة للزر الأخير */
+  }
+  
+  .notes-box, .goals-box {
+    display: block;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: white;
+    float: left; /* جعل البوكسات تظل في صف واحد */
+    margin-right: 20px; /* مسافة بين البوكسات */
+  }
+  
+  .notes-box textarea, .goals-box input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .notes-box button, .goals-box button {
+    background-color: #06A3DA;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .notes-box button:hover, .goals-box button:hover {
+    background-color: #F57E57;
+  }
+  
+  
+#dailyFollowUp{
+
+    border: 1px solid rgb(246, 241, 241);
+    border-radius: 10px;
+    margin-top: 80px;
+    width:90%;
+    height: 50px;
+    background: linear-gradient(180deg,#06A3DA, #1f7fdf);
+    margin-left: 90px;
+}
+#dailyFollowUp:hover{
+  
+    transform: scale(1.05); /* زيادة حجم العنصر قليلاً عند hover */
+    color: #fff; /* يمكنك تغيير لون النص إذا أردت */
+}
+ /* Hide the follow-up box initially */
+#followUpBox {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Bold message style */
+  .bold-message {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Detailed message style */
+  .detailed-message {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button group style */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Success and relapse buttons */
+  .success-btn, .relapse-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+  }
+  
+  .success-btn:hover, .relapse-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .relapse-btn {
+    background-color: #f44336;
+  }
+  
+  .relapse-btn:hover {
+    background-color: #e53935;
+  }
+  .hero {
+    height: 70vh;
+    background: linear-gradient(#1fdad6, #299ac3);
+}
